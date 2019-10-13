@@ -49,9 +49,70 @@
 <style scoped lang="scss">
 
     .advantages {
+        max-width: 1024px;
+        margin:  0 auto 100px auto;
+
         &__title {
-            font-size: 30px;
+            font-size: 25px;
             text-transform: uppercase;
+            font-weight: 600;
+            padding: 30px 0;
+            text-align: center;
+            background-color: #f26322;
+            color: white;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+
+        .advantage {
+            max-width: 60%;
+
+            &:nth-child(even) {
+                margin-left: auto;
+                text-align: right;
+
+                .advantage__name {
+                    margin-right: 220px;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        right: -220px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 200px;
+                        height: 2px;
+                        background: black;
+                    }
+                }
+            }
+
+            &:nth-child(odd) {
+                text-align: left;
+
+                .advantage__name {
+                    margin-left: 220px;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: -220px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 200px;
+                        height: 2px;
+                        background: black;
+                    }
+                }
+            }
+
+            &__name {
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 18px;
+                text-transform: uppercase;
+                position: relative;
+            }
         }
     }
 

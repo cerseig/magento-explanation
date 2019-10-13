@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <div class="nav">
-      <a href="#definition" @click="scrollToSection('definition')">Définition</a>
-      <a href="#advantages" @click="scrollToSection('advantages')">Avantages</a>
-      <a href="#inconveniences" @click="scrollToSection('inconveniences')">Inconvénients</a>
-      <a href="#competitors" @click="scrollToSection('competitors')">Concurrents</a>
-      <a href="#lexicon" @click="scrollToSection('lexicon')">Lexique</a>
+      <a @click="scrollToSection('definition')">Définition</a>
+      <a @click="scrollToSection('advantages')">Avantages</a>
+      <a @click="scrollToSection('inconveniences')">Inconvénients</a>
+      <a @click="scrollToSection('competitors')">Concurrents</a>
+      <a @click="scrollToSection('lexicon')">Lexique</a>
     </div>
     <router-view/>
   </div>
@@ -18,7 +18,7 @@
             scrollToSection: function(section) {
                 console.log('scroll to');
                 $('html, body').animate({
-                    scrollTop: $('.' + section).offset().top
+                    scrollTop: ($('.' + section).offset().top - 50)
                 }, 2000);
             }
         }
@@ -37,13 +37,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 25px;
   }
 
   a {
     color: black;
     text-decoration: none;
+    cursor: pointer;
   }
 
   ul, li {
