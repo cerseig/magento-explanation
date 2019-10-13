@@ -1,10 +1,10 @@
 <template>
     <div class="home">
         <div class="landing">
-            <div class="landing__logo">
+            <a class="landing__logo" href="https://magento.com/fr" title="Lien vers le site Magento" target="_blank">
                 <img class="landing__logo--1" :src="require(`@/assets/logos/magento-logo-1.png`)" alt="Magento logo 1">
                 <img class="landing__logo--2" :src="require(`@/assets/logos/magento-logo-2.png`)" alt="Magento logo 2">
-            </div>
+            </a>
             <div class="landing__down"></div>
         </div>
         <Definition />

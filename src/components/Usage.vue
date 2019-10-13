@@ -3,7 +3,7 @@
         <div class="use__container">
             <h2 class="use__title title-section">Dans quel cas faut-il choisir <span>Magento</span> ?</h2>
             <div class="use__content">
-                <p>Si vous êtes une grosse entreprise et que souhaitez un site e-commerce performant permettant de gérer une grande quantité de produits et un important flux de visite, Magento est la technologie faites pour vous. Évitez cette plateforme si vous êtes plutôt une petite entreprise sur le début, cela engendrerait des coûts beaucoup trop importants et une perte de temps. </p>
+                <p>Si vous êtes une grosse entreprise et que souhaitez un site e-commerce performant permettant de gérer une grande quantité de produits et un important flux de visite, Magento est la technologie faites pour vous. Vous pourrez avoir la main sur quasiment tous les modules et personnaliser au maximum selon ses envies et besoins. Évitez cette plateforme si vous êtes plutôt une petite entreprise sur le début, cela engendrerait des coûts beaucoup trop importants et une perte de temps. </p>
             </div>
         </div>
     </div>
