@@ -121,4 +121,46 @@
         }
     }
 
+    @media screen and (max-width: 767px) {
+        .advantages {
+            margin:  0 auto 50px auto;
+
+            &__title {
+                font-size: 20px;
+            }
+
+            &__content {
+                padding: 0 20px;
+            }
+
+            .advantage {
+                max-width: 100%;
+                margin-bottom: 40px;
+
+                &:nth-child(even) {
+                    .advantage__name {
+                        margin-right: 120px;
+
+                        &:before {
+                            right: -120px;
+                            width: 100px;
+                        }
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .advantage__name {
+                        margin-left: 120px;
+
+                        &:before {
+                            left: -120px;
+                            width: 100px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
 </style>

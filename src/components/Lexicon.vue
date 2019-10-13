@@ -85,4 +85,23 @@
         }
     }
 
+    @media screen and (max-width: 767px) {
+        .lexicon {
+            margin-bottom: 20px;
+
+            &__title {
+                font-size: 20px;
+            }
+            &__content {
+                padding: 0 20px;
+            }
+
+            &__list {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 20px;
+            }
+        }
+    }
+
 </style>

@@ -55,4 +55,26 @@
             width: 80%;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .competitors {
+            margin:  0 auto 50px auto;
+
+            &__title {
+                font-size: 20px;
+            }
+
+            &__content {
+                padding: 0 20px;
+
+                p {
+                    max-width: 100%;
+                }
+            }
+
+            &__logos {
+                width: 100%;
+            }
+        }
+    }
 </style>

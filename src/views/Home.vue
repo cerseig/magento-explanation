@@ -103,4 +103,18 @@
 
   }
 
+  @media screen and (max-width: 767px) {
+      .landing {
+          &__logo {
+              &--1 {
+                  width: 80px;
+                  margin-right: 10px;
+              }
+              &--2 {
+                  width: 200px;
+              }
+          }
+      }
+  }
+
 </style>

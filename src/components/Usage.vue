@@ -38,4 +38,18 @@
         }
     }
 
+    @media screen and (max-width: 767px) {
+        .use {
+            background: none;
+            padding: 20px;
+
+            &__title {
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+    }
+
+
+
 </style>

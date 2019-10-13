@@ -95,4 +95,46 @@
             }
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .inconveniences {
+            margin:  0 auto 50px auto;
+
+            &__title {
+                font-size: 20px;
+            }
+
+            &__content {
+                padding: 0 20px;
+            }
+
+            .inconvenience {
+                max-width: 100%;
+                margin-bottom: 40px;
+
+                &:nth-child(even) {
+                    .inconvenience__name {
+                        margin-right: 120px;
+
+                        &:before {
+                            right: -120px;
+                            width: 100px;
+                        }
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .inconvenience__name {
+                        margin-left: 120px;
+
+                        &:before {
+                            left: -120px;
+                            width: 100px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 </style>

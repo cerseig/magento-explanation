@@ -73,4 +73,42 @@
         }
     }
 
+    @media screen and (max-width: 767px) {
+        .definition {
+            margin: 50px auto;
+            display: block;
+            padding: 0 20px;
+
+            &__title {
+                font-size: 40px;
+                line-height: 40px;
+                margin-right: 0;
+                text-align: center;
+            }
+
+            &__content {
+                border-left: none;
+                padding-left: 0;
+                width: 100%;
+
+                p {
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                ul {
+                    li {
+                        &:before {
+                            top: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 </style>
