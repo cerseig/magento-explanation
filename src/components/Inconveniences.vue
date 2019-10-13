@@ -24,7 +24,6 @@
 
 <style scoped lang="scss">
     .inconveniences {
-        max-width: 1024px;
         margin:  0 auto 100px auto;
 
         &__title {
@@ -37,6 +36,12 @@
             color: white;
             letter-spacing: 2px;
             margin-bottom: 50px;
+        }
+
+        &__content {
+            padding: 0 30px;
+            max-width: 1024px;
+            margin: 0 auto;
         }
 
         .inconvenience {

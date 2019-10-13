@@ -25,6 +25,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 30px;
 
         &__title {
             font-size: 50px;

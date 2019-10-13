@@ -10,6 +10,7 @@
         <Definition />
         <Advantages />
         <Inconveniences />
+        <Usage />
         <Competitors />
         <Lexicon />
     </div>
@@ -21,6 +22,7 @@
     import Inconveniences from '@/components/Inconveniences.vue';
     import Competitors from '@/components/Competitors.vue';
     import Lexicon from '@/components/Lexicon.vue';
+    import Usage from '@/components/Usage.vue';
 
     export default {
         name: 'home',
@@ -29,16 +31,13 @@
             Competitors,
             Advantages,
             Inconveniences,
-            Definition
+            Definition,
+            Usage
         },
         mounted() {
-            this.animateLogo();
+
         },
         methods: {
-            animateLogo: function() {
-                console.log('test');
-
-            }
         }
     }
 </script>

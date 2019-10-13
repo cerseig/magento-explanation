@@ -1,6 +1,6 @@
 <template>
     <div class="lexicon">
-        <h2 class="lexicon__title title-section">Lexique</h2>
+        <h2 class="lexicon__title title-section">Le lexique</h2>
         <div class="lexicon__content">
             <ul class="lexicon__list">
                 <li class="lexicon__item word">
@@ -47,5 +47,42 @@
 </script>
 
 <style scoped lang="scss">
+
+    .lexicon {
+        margin-bottom: 50px;
+
+        &__title {
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 30px 0;
+            text-align: center;
+            background-color: #f26322;
+            color: white;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+        &__content {
+            padding: 0 30px;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 30px;
+        }
+
+        .word {
+            &__name {
+                margin: 0;
+            }
+
+            &__description {
+                margin-top: 5px;
+            }
+        }
+    }
 
 </style>
