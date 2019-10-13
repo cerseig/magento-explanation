@@ -1,14 +1,29 @@
 <template>
   <div id="app">
     <div class="nav">
-      <router-link to="/advantages">Avantages</router-link>
-      <router-link to="/inconveniences">Inconvénients</router-link>
-      <router-link to="/competitors">Concurrents</router-link>
-      <router-link to="/lexicon">Lexique</router-link>
+      <a href="#definition" @click="scrollToSection('definition')">Définition</a>
+      <a href="#advantages" @click="scrollToSection('advantages')">Avantages</a>
+      <a href="#inconveniences" @click="scrollToSection('inconveniences')">Inconvénients</a>
+      <a href="#competitors" @click="scrollToSection('competitors')">Concurrents</a>
+      <a href="#lexicon" @click="scrollToSection('lexicon')">Lexique</a>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+    export default {
+        name: 'App',
+        methods: {
+            scrollToSection: function(section) {
+                console.log('scroll to');
+                $('html, body').animate({
+                    scrollTop: $('.' + section).offset().top
+                }, 2000);
+            }
+        }
+    }
+</script>
 
 <style lang="scss">
 
@@ -21,6 +36,9 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
   }
 
   a {
@@ -28,20 +46,36 @@
     text-decoration: none;
   }
 
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   .nav {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 40px;
+    height: 50px;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 
     a {
+      font-size: 12px;
       flex: 1;
       text-align: center;
       text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #f26322;
+      }
+
     }
   }
 

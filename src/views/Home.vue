@@ -7,6 +7,7 @@
             </div>
             <div class="landing__down"></div>
         </div>
+        <Definition />
         <Advantages />
         <Inconveniences />
         <Competitors />
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+    import Definition from '@/components/Definition.vue';
     import Advantages from '@/components/Advantages.vue';
     import Inconveniences from '@/components/Inconveniences.vue';
     import Competitors from '@/components/Competitors.vue';
@@ -26,7 +28,8 @@
             Lexicon,
             Competitors,
             Advantages,
-            Inconveniences
+            Inconveniences,
+            Definition
         },
         mounted() {
             this.animateLogo();
