@@ -16,11 +16,33 @@
     box-sizing: border-box;
   }
 
-  html, body {
+  html, body, #app {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      flex: 1;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 
 </style>
